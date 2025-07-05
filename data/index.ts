@@ -82,7 +82,7 @@ export const projects = [
     id: 2,
     title: "Personal Portfolio",
     des: "Simplify your portfolio management with this Next.js and Tailwind CSS-powered personal portfolio template.",
-    img: "/site.png",
+    img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "#",
   },
