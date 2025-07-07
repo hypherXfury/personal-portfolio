@@ -5,7 +5,7 @@ import MagicButton from './ui/MagicButton'
 import { FaArrowRight, FaLocationArrow } from 'react-icons/fa'
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 bg-black">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -19,22 +19,22 @@ const Hero = () => {
       </div>
 
 
-      <div className="h-screen w-full flex item-center justify-center bg-white dark:bg-black absolute top-0 left-0">
+      <div className="h-screen w-full flex item-center justify-center bg-black absolute top-0 left-0">
         <div
           className={cn(
-            "absolute inset-0",
+            "absolute inset-0 opacity-20 dark:opacity-100",
             "[background-size:40px_40px]",
             "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
             "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
       <div className='flex justify-center relative my-20 z-10'>
         <div className='max-w-89[vw] md:max-w-2xl lg: max-w-[60vw] flex flex-col items-center justify-center'>
-          <h2 className='uppercase tracking-widest text-xs text-center text-gray-900 dark:text-white max-w'>
+          <h2 className='uppercase tracking-widest text-xs text-center text-white max-w'>
             Dynamic and Engaging Game Development with Unity and C#.
           </h2>
           <TextGenerateEffect
@@ -44,7 +44,7 @@ const Hero = () => {
             duration={0.5}
             />
 
-            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-black dark:text-white'>
+            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white'>
             Hi, I'm Vaibahv, a video game developer based in India.
             </p>
 
